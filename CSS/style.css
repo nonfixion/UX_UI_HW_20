@@ -1,4 +1,6 @@
 nav {
+    display: inline-block;
+    justify-content: center;
     padding-left: 40px;
     padding-right: 40px;
     background-color: #DEE0CC;
@@ -6,7 +8,11 @@ nav {
     width: 100%;
     margin-left: auto;
     margin-right: 0 !important;
-    
+}
+
+ul.nav {
+    display: flex;
+    justify-content: center;
 }
 
 .navbar-brand {
@@ -31,11 +37,66 @@ body {
 h1, h2, h3 , h4, h5, h6 {
     font-family: 'Aleo', serif;
     color:#D7E788;
+    font-size: 64px;
+    font-style: bold;
+    letter-spacing: 5px;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    color:#DEE0CC;
+    line-height: 35px;
+    font-size: 20px;
 }
 
 .jumbotron {
-    height: calc(100vh);
+  height: calc(100vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jumboCopy {
+    width: 70%;
+    min-width: 500px;
+    max-width: 700px;
+    text-align: center; 
+}
+  
+img .ASPCA {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #281522;
+    height: 60px;
+    width: 100%;
+}
+
+.links {
+    display: flex;
+    padding: 60px; 
+    align-items: center;
+}
+   
+footer li {
+    list-style-type: none;
+}
+
+.foot {
+    font-family: 'Inter', sans-serif;
+    padding: 22px;
+    font-size: 20px;
+    color: #DEE0CC;
+    text-decoration: none;
+}
+        
+.foot:hover {
+    cursor: pointer;
+    color: #D7E788;
+    text-decoration: underline;
 }
